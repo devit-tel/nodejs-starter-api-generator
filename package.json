@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-starter-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "bin": {
+    "sendit-generator:nodejs": "./bin/nodejs-generate.js"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=8.4.0"
+  },
+  "author": "spksoft",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^5.2.0"
+  }
+}
