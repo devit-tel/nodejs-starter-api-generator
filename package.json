@@ -3,10 +3,10 @@
   "version": "1.0.4",
   "description": "",
   "main": "./lib/index.js",
+  "preferGlobal": true,
   "bin": {
     "sendit-generator:nodejs": "./bin/nodejs-generate.js"
   },
-  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
