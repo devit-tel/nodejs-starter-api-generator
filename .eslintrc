@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "no-console": 0,
+    "linebreak-style": 0,
+    "semi": ["warn", "never"],
+    "arrow-parens": ["warn", "as-needed"],
+    "function-paren-newline": 0,
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+    "no-param-reassign": 0
+  }
+}
