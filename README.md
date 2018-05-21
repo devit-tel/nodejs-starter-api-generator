@@ -1,8 +1,10 @@
 # nodejs-starter-generator
 
-## Run on local
+## Install
 ```
-npm install
-npm link
+npm install -g @spksoft/nodejs-starter-generator
+```
+## Run
+```
 sendit-generator:nodejs
 ```

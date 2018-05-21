@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-starter-generator",
+  "name": "@spksoft/nodejs-starter-generator",
   "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
@@ -12,6 +12,14 @@
   },
   "engines": {
     "node": ">=8.4.0"
+  },
+  "keywords": [
+    "generator",
+    "nodejs",
+    "starter"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "author": "spksoft",
   "license": "MIT",
