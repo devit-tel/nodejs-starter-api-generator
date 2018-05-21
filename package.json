@@ -1,11 +1,11 @@
 {
   "name": "@spksoft/nodejs-starter-generator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "./lib/index.js",
   "preferGlobal": true,
   "bin": {
-    "sendit-generator:nodejs": "./bin/nodejs-generate"
+    "sendit-generator-nodejs": "./bin/nodejs-generate"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
