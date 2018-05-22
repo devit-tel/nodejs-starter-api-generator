@@ -5,8 +5,9 @@ const chalk = require('chalk')
 
 program
   .version('0.0.1', '-v, --version')
-  .command('*')
-  .action(generate)
+  .option('-y, --yes', 'use all default options')
+  .command('*', 'package name')
+  .action(packageName => generate(packageName, program.yes))
 
 program.parse(process.argv)
 
