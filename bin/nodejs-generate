@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 const program = require('commander')
+const generate = require('../lib')
+const chalk = require('chalk')
 
 program
   .version('0.0.1', '-v, --version')
   .command('*')
-  .action(require('../lib'))
+  .action(generate)
 
 program.parse(process.argv)
+
+if (process.argv.length === 2) {
+  console.log(chalk.red('Sorry, Must provide package name!'))
+}
