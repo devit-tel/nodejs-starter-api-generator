@@ -1,3 +1,16 @@
 #!/usr/bin/env node
-const { nodejs } = require('../lib')
-nodejs()
+const program = require('commander')
+const generate = require('../lib')
+const chalk = require('chalk')
+
+program
+  .version('0.0.1', '-v, --version')
+  .option('-y, --yes', 'use all default options')
+  .command('*', 'package name')
+  .action(packageName => generate(packageName, program.yes))
+
+program.parse(process.argv)
+
+if (process.argv.length === 2) {
+  console.log(chalk.red('Sorry, Must provide package name!'))
+}
