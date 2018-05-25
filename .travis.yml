@@ -1,0 +1,5 @@
+language: node_js
+nvm:
+  - "8"
+before_script:
+  - echo before-script
