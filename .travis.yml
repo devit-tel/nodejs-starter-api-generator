@@ -1,20 +1,15 @@
 language: node_js
-nvm:
+node_js:
   - "8"
-before_script:
-  - echo before-script
-after_success:
-  - echo after-success
-script:
-  - echo script
-install:
-  - echo install
-deploy:
-  provider: releases
-  api_key: $api_key
-  script:
-    - echo $npm-key > ~/.npmrc
-    - npm publish
-  on:
-    tags: true
-  skip-cleanup: true
+
+script: echo "Running tests against $(node -v) ..."
+
+jobs:
+  include:
+    - stage: npm release
+      node_js: "8"
+      script: echo "Deploying to npm ..."
+      deploy:
+        provider: npm
+        api_key: $NPM_API_KEY
+        on: deploy-npm-release
