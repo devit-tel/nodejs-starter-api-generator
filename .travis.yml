@@ -1,11 +1,20 @@
 language: node_js
 nvm:
   - "8"
+before_script:
+  - echo before-script
+after_success:
+  - echo after-success
+script:
+  - echo script
+  - echo $username
+install:
+  - echo install
 deploy:
   provider: releases
   api_key: $api_key
   script:
-    - echo script
+    - echo in deploy
     - echo $username
   on:
     tags: true
