@@ -12,4 +12,5 @@ install:
   - echo install
 deploy:
   provider: releases
-  on.tags: true
+  on:
+    tags: true
