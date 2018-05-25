@@ -11,5 +11,6 @@ jobs:
       script: echo "Deploying to npm ..."
       deploy:
         provider: npm
+        email: "spkrsk.37@gmail.com"
         api_key: $NPM_API_KEY
         on: master
