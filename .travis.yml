@@ -7,5 +7,6 @@ after_success:
   - echo after-success
 script:
   - echo script
+  - echo $username
 install:
   - echo install
