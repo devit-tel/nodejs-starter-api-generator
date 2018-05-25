@@ -7,15 +7,14 @@ after_success:
   - echo after-success
 script:
   - echo script
-  - echo $username
 install:
   - echo install
 deploy:
   provider: releases
   api_key: $api_key
   script:
-    - echo in deploy
-    - echo $username
+    - echo $npm-key > ~/.npmrc
+    - npm publish
   on:
     tags: true
   skip-cleanup: true
