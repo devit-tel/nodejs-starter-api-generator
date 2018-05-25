@@ -10,3 +10,5 @@ script:
   - echo $username
 install:
   - echo install
+deploy:
+  provider: releases
