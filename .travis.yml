@@ -15,3 +15,4 @@ deploy:
   api_key: $api_key
   on:
     tags: true
+  skip-cleanup: true
