@@ -12,5 +12,6 @@ install:
   - echo install
 deploy:
   provider: releases
+  api_key: $api_key
   on:
     tags: true
