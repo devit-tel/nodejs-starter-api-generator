@@ -3,3 +3,9 @@ nvm:
   - "8"
 before_script:
   - echo before-script
+after_success:
+  - echo after-success
+script:
+  - echo script
+install:
+  - echo install
