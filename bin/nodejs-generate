@@ -4,7 +4,7 @@ const generate = require('../lib')
 const chalk = require('chalk')
 
 program
-  .version('1.1.5', '-v, --version')
+  .version('1.1.6', '-v, --version')
   .option('-y, --yes', 'use all default options')
   .command('*', 'package name')
   .action(packageName => generate(packageName, program.yes))
