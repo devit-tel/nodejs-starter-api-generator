@@ -2,7 +2,7 @@
 
 ## Install
 ```
-npm install -g @spksoft/nodejs-starter-generator
+npm install -g sendit-nodejs-generator
 ```
 ## Run
 ```
