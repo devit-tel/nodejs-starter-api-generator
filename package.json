@@ -1,6 +1,6 @@
 {
-  "name": "@spksoft/nodejs-starter-generator",
-  "version": "1.1.6",
+  "name": "sendit-nodejs-generator",
+  "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
   "preferGlobal": true,
